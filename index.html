@@ -1,301 +1,345 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Invoice</title>
 
     <link rel="stylesheet" href="assets/css/styles.css" />
-</head>
-<body>
-<header>
-    <div class="container">
+  </head>
+  <body>
+    <header>
+      <div class="container">
         <div class="header">
-            <div class="navigation-bar">
-                <div class="subheader-stanga">
-                    <div>INVOICE</div>
-                </div>
-                <div class="subheader-dreapta">
-                    <div class="factura-noua">Factura noua</div>
-                    <div>Tiparire</div>
-                </div>
+          <div class="navigation-bar">
+            <div class="subheader-stanga">
+              <div>INVOICE</div>
             </div>
+            <div class="subheader-dreapta">
+              <div class="factura-noua">Factura noua</div>
+              <div>Tiparire</div>
+            </div>
+          </div>
         </div>
-    </div>
-</header>
+      </div>
+    </header>
 
-<main>
-    <section class="factura">
+    <main>
+      <section class="factura">
         <div class="factura-info">
-            <div class="furnizor">
-                <label for="furnizor" class="funizor-cumparator">Furnizor:</label>
-                <textarea
-                        id="furnizor"
-                        class="textarea"
-                        name="furnizor"
-                        rows="10"
-                        cols="20"
-                ></textarea>
-            </div>
+          <div class="furnizor">
+            <label for="furnizor" class="funizor-cumparator">Furnizor:</label>
+            <textarea
+              id="furnizor"
+              class="textarea"
+              name="furnizor"
+              rows="10"
+              cols="20"
+            ></textarea>
+          </div>
 
-            <div class="factura-nume">
-                <h3 class="factura-nume-titlu">FACTURA</h3>
+          <div class="factura-nume">
+            <h3 class="factura-nume-titlu">FACTURA</h3>
 
-                <label for="factura-nr" class="factura-nume-label">Nr</label>
-                <input type="text" id="factura-nr" name="factura-nr" class="factura-nume-input"/>
-                <br />
+            <label for="factura-nr" class="factura-nume-label">Nr</label>
+            <input
+              type="text"
+              id="factura-nr"
+              name="factura-nr"
+              class="factura-nume-input"
+            />
+            <br />
 
-                <label for="factura-data" class="factura-nume-label">Data</label>
-                <input type="text" id="factura-data" name="factura-data" class="factura-nume-input"/>
-                <br />
+            <label for="factura-data" class="factura-nume-label">Data</label>
+            <input
+              type="text"
+              id="factura-data"
+              name="factura-data"
+              class="factura-nume-input"
+            />
+            <br />
 
-                <label for="factura-aviz" class="factura-nume-label">Nr aviz</label>
-                <input type="text" id="factura-aviz" name="factura-aviz" class="factura-nume-input"/>
-            </div>
+            <label for="factura-aviz" class="factura-nume-label">Nr aviz</label>
+            <input
+              type="text"
+              id="factura-aviz"
+              name="factura-aviz"
+              class="factura-nume-input"
+            />
+          </div>
 
-            <div class="cumparator">
-                <label for="cumparator" class="funizor-cumparator">Cumparator</label>
-                <textarea
-                        id="cumparator"
-                        class="textarea"
-                        name="cumparator"
-                        rows="10"
-                        cols="20"
-                ></textarea>
-            </div>
+          <div class="cumparator">
+            <label for="cumparator" class="funizor-cumparator"
+              >Cumparator</label
+            >
+            <textarea
+              id="cumparator"
+              class="textarea"
+              name="cumparator"
+              rows="10"
+              cols="20"
+            ></textarea>
+          </div>
         </div>
 
         <div class="factura-tabel">
-            <table class="tabel-factura" id="#mytable">
-                <tr>
-                    <th class="factura-tabel-th nr-crt">Nr.<br>Crt</th>
-                    <th class="factura-tabel-th denumirea-produselor" colspan="2">Denumirea produselor<br> sau serviciilor</th>
-                    <th class="factura-tabel-th um">U.M.</th>
-                    <th class="factura-tabel-th">Cantitatea</th>
-                    <th class="factura-tabel-th pret-unitar">Pret unitar <br> (fara TVA) lei</th>
-                    <th class="factura-tabel-th valoare-lei">Valoarea <br> lei</th>
-                    <th class="factura-tabel-th valoare-tva">Valoarea <br> TVA lei</th>
-                </tr>
+          <table class="tabel-factura" id="#mytable">
+            <tr>
+              <th class="factura-tabel-th nr-crt">Nr.<br />Crt</th>
+              <th class="factura-tabel-th denumirea-produselor" colspan="2">
+                Denumirea produselor<br />
+                sau serviciilor
+              </th>
+              <th class="factura-tabel-th um">U.M.</th>
+              <th class="factura-tabel-th">Cantitatea</th>
+              <th class="factura-tabel-th pret-unitar">
+                Pret unitar <br />
+                (fara TVA) lei
+              </th>
+              <th class="factura-tabel-th valoare-lei">
+                Valoarea <br />
+                lei
+              </th>
+              <th class="factura-tabel-th valoare-tva">
+                Valoarea <br />
+                TVA lei
+              </th>
+            </tr>
 
-                <tr>
-                    <td class="tabel-factura-text">0</td>
-                    <td class="tabel-factura-text" colspan="2">1</td>
-                    <td class="tabel-factura-text">2</td>
-                    <td class="tabel-factura-text">3</td>
-                    <td class="tabel-factura-text">4</td>
-                    <td class="tabel-factura-text">5(3x4)</td>
-                    <td class="tabel-factura-text">6</td>
-                </tr>
+            <tr>
+              <td class="tabel-factura-text">0</td>
+              <td class="tabel-factura-text" colspan="2">1</td>
+              <td class="tabel-factura-text">2</td>
+              <td class="tabel-factura-text">3</td>
+              <td class="tabel-factura-text">4</td>
+              <td class="tabel-factura-text">5(3x4)</td>
+              <td class="tabel-factura-text">6</td>
+            </tr>
 
-                <tr>
-                    <td class="tabel-factura-text"></td>
-                    <td class="tabel-factura-text" colspan="2">
-                        <label for="produse-denumire" class="sr-only">Denumire produse sau servicii</label>
-                        <input
-                                class="denumirea-produselor-input"
-                                type="text"
-                                id="produse-denumire"
-                                name="produse-denumire"
-                        />
-                    </td>
-                    <td class="tabel-factura-text">
-                        <label for="um" class="sr-only">U.M.</label>
-                        <input
-                                class="um-input"
-                                type="text"
-                                id="um"
-                                name="um"
-                        />
-                    </td>
-                    <td class="tabel-factura-text">
-                        <label for="produse-cantitate" class="sr-only">Cantitatea</label>
-                        <input
-                                class="cantitate-input"
-                                type="text"
-                                id="produse-cantitate"
-                                name="produse-cantitate"
-                        />
-                    </td>
-                    <td class="tabel-factura-text">
-                        <label for="produse-pret-unitar" class="sr-only"
-                        >Pret unitar (fara TVA) lei</label
-                        >
-                        <input
-                                class="pret-unitar-input"
-                                type="text"
-                                id="produse-pret-unitar"
-                                name="produse-pret-unitar"
-                        />
-                    </td>
-                    <td class="tabel-factura-text"></td>
-                    <td class="tabel-factura-text"><button class="valoare-tva-button" onclick="addNewRow()">adauga</button></td>
-                </tr>
+            <tr>
+              <td class="tabel-factura-text"></td>
+              <td class="tabel-factura-text" colspan="2">
+                <label for="produse-denumire" class="sr-only"
+                  >Denumire produse sau servicii</label
+                >
+                <input
+                  class="denumirea-produselor-input"
+                  type="text"
+                  id="produse-denumire"
+                  name="produse-denumire"
+                />
+              </td>
+              <td class="tabel-factura-text">
+                <label for="um" class="sr-only">U.M.</label>
+                <input class="um-input" type="text" id="um" name="um" />
+              </td>
+              <td class="tabel-factura-text">
+                <label for="produse-cantitate" class="sr-only"
+                  >Cantitatea</label
+                >
+                <input
+                  class="cantitate-input"
+                  type="text"
+                  id="produse-cantitate"
+                  name="produse-cantitate"
+                />
+              </td>
+              <td class="tabel-factura-text">
+                <label for="produse-pret-unitar" class="sr-only"
+                  >Pret unitar (fara TVA) lei</label
+                >
+                <input
+                  class="pret-unitar-input"
+                  type="text"
+                  id="produse-pret-unitar"
+                  name="produse-pret-unitar"
+                />
+              </td>
+              <td class="tabel-factura-text"></td>
+              <td class="tabel-factura-text">
+                <button class="valoare-tva-button" onclick="addNewRow()">
+                  adauga
+                </button>
+              </td>
+            </tr>
 
-                <!--            randuri goale-->
-                <tr>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text" colspan="2">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text" colspan="2">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text" colspan="2">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text" colspan="2">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text" colspan="2">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text" colspan="2">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text" colspan="2">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text" colspan="2">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text" colspan="2">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text" colspan="2">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text" colspan="2">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text" colspan="2">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text" colspan="2">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text" colspan="2">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text" colspan="2">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                    <td class="randuri-fara-text">&nbsp;</td>
-                </tr>
-                <!--            se termina randurile goale-->
+            <!--            randuri goale-->
+            <tr>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text" colspan="2">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+            </tr>
+            <tr>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text" colspan="2">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+            </tr>
+            <tr>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text" colspan="2">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+            </tr>
+            <tr>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text" colspan="2">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+            </tr>
+            <tr>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text" colspan="2">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+            </tr>
+            <tr>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text" colspan="2">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+            </tr>
+            <tr>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text" colspan="2">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+            </tr>
+            <tr>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text" colspan="2">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+            </tr>
+            <tr>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text" colspan="2">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+            </tr>
+            <tr>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text" colspan="2">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+            </tr>
+            <tr>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text" colspan="2">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+            </tr>
+            <tr>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text" colspan="2">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+            </tr>
+            <tr>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text" colspan="2">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+            </tr>
+            <tr>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text" colspan="2">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+            </tr>
+            <tr>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text" colspan="2">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+              <td class="randuri-fara-text">&nbsp;</td>
+            </tr>
+            <!--            se termina randurile goale-->
 
+            <tr>
+              <td
+                colspan="2"
+                rowspan="2"
+                class="tabel-factura-text semnatura-furnizor aliniere-text"
+              >
+                Semnatura<br />
+                furnizor
+              </td>
+              <td
+                colspan="3"
+                rowspan="2"
+                class="tabel-factura-text spatiu-semnatura"
+              ></td>
+              <td class="tabel-factura-text total">Total</td>
+              <td class="tabel-factura-text"></td>
+              <td class="tabel-factura-text"></td>
+            </tr>
 
-
-                <tr>
-                    <td colspan="2" rowspan="2" class="tabel-factura-text semnatura-furnizor aliniere-text">Semnatura<br> furnizor</td>
-                    <td colspan="3" rowspan="2" class="tabel-factura-text spatiu-semnatura"></td>
-                    <td class="tabel-factura-text total">Total</td>
-                    <td class="tabel-factura-text"></td>
-                    <td class="tabel-factura-text"></td>
-                </tr>
-
-                <tr>
-                    <td class="tabel-factura-text aliniere-text">Semnatura<br> de primire</td>
-                    <td colspan="2" class="tabel-factura-text aliniere-text">Total de plata</td>
-                </tr>
-
-
-            </table>
+            <tr>
+              <td class="tabel-factura-text aliniere-text">
+                Semnatura<br />
+                de primire
+              </td>
+              <td colspan="2" class="tabel-factura-text aliniere-text">
+                Total de plata
+              </td>
+            </tr>
+          </table>
         </div>
-    </section>
-</main>
+      </section>
+    </main>
 
-<footer>
-    <div class="footer">
+    <footer>
+      <div class="footer">
         <div class="subfooter">Copyright(c) 2021 Universitatea Craiova</div>
-    </div>
-</footer>
+      </div>
+    </footer>
 
     <script type="text/javascript" src="tabel.js"></script>
-</body>
+  </body>
 </html>
