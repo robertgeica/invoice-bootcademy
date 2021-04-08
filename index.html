@@ -66,7 +66,7 @@
         </div>
 
         <div class="factura-tabel">
-            <table class="tabel-factura">
+            <table class="tabel-factura" id="#mytable">
                 <tr>
                     <th class="factura-tabel-th nr-crt">Nr.<br>Crt</th>
                     <th class="factura-tabel-th denumirea-produselor" colspan="2">Denumirea produselor<br> sau serviciilor</th>
@@ -128,7 +128,7 @@
                         />
                     </td>
                     <td class="tabel-factura-text"></td>
-                    <td class="tabel-factura-text"><button class="valoare-tva-button">adauga</button></td>
+                    <td class="tabel-factura-text"><button class="valoare-tva-button" onclick="addNewRow()">adauga</button></td>
                 </tr>
 
                 <!--            randuri goale-->
@@ -270,6 +270,7 @@
                 <!--            se termina randurile goale-->
 
 
+
                 <tr>
                     <td colspan="2" rowspan="2" class="tabel-factura-text semnatura-furnizor aliniere-text">Semnatura<br> furnizor</td>
                     <td colspan="3" rowspan="2" class="tabel-factura-text spatiu-semnatura"></td>
@@ -282,6 +283,8 @@
                     <td class="tabel-factura-text aliniere-text">Semnatura<br> de primire</td>
                     <td colspan="2" class="tabel-factura-text aliniere-text">Total de plata</td>
                 </tr>
+
+
             </table>
         </div>
     </section>
@@ -292,5 +295,7 @@
         <div class="subfooter">Copyright(c) 2021 Universitatea Craiova</div>
     </div>
 </footer>
+
+    <script type="text/javascript" src="tabel.js"></script>
 </body>
 </html>

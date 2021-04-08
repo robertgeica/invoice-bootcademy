@@ -172,7 +172,7 @@ main{
 }
 
 .navigation-bar{
-  background: rgb(23, 23, 119);
+  background: #173F5F;
   padding:15px 15px;
   border-right: 1px solid white ;
   display: flex;
@@ -180,7 +180,7 @@ main{
 }
 
 .footer{
-  background:rgb(71, 71, 165);
+  background:#20639B;
   padding:15px 15px;
   border-right: 1px solid white ;
   color:white;
@@ -188,12 +188,13 @@ main{
 
 .subheader-stanga{
   text-align: left;
-  padding:15px 15px;
-  font-size: 40px;
+  font-size: 35px;
   color: white;
-  font-family: sans-serif;
-  font-weight: 700;
+  font-family: 'Garamond', sans-serif;
   flex:70%;
+  transform: scale(1, 1.5);
+  letter-spacing: 2px;
+  padding-left: 183px;
 }
 
 .subfooter{
@@ -201,9 +202,10 @@ main{
   padding:15px 15px;
 }
 .subheader-dreapta{
-  flex:30%;
+  flex: 55%;
   color:white;
-  padding-top: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .factura-noua {
