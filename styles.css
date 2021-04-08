@@ -100,7 +100,6 @@ main{
   border-color: lightgray;
 }
 
-<<<<<<< HEAD
 .cantitate-input{
   width: 80px;
   margin: 5px;
@@ -163,10 +162,11 @@ main{
   padding-top: 10px;
 }
 
-.randuri-fara-text{
+.randuri-fara-text {
   border-left: 1px solid black;
   border-right: 1px solid black;
-=======
+}
+
 .container{
   width:auto;
 }
@@ -176,7 +176,7 @@ main{
   padding:15px 15px;
   border-right: 1px solid white ;
   display: flex;
-  text-align: center;  
+  text-align: center;
 }
 
 .footer{
@@ -206,7 +206,6 @@ main{
   padding-top: 25px;
 }
 
-.factura-noua{
+.factura-noua {
   float: left;
->>>>>>> 1f2a16e75f22412794abd4f243c67fdd15b41f3b
 }
