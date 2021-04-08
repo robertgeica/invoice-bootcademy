@@ -100,6 +100,7 @@ main{
   border-color: lightgray;
 }
 
+<<<<<<< HEAD
 .cantitate-input{
   width: 80px;
   margin: 5px;
@@ -165,4 +166,47 @@ main{
 .randuri-fara-text{
   border-left: 1px solid black;
   border-right: 1px solid black;
+=======
+.container{
+  width:auto;
+}
+
+.navigation-bar{
+  background: rgb(23, 23, 119);
+  padding:15px 15px;
+  border-right: 1px solid white ;
+  display: flex;
+  text-align: center;  
+}
+
+.footer{
+  background:rgb(71, 71, 165);
+  padding:15px 15px;
+  border-right: 1px solid white ;
+  color:white;
+}
+
+.subheader-stanga{
+  text-align: left;
+  padding:15px 15px;
+  font-size: 40px;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 700;
+  flex:70%;
+}
+
+.subfooter{
+  text-align: right;
+  padding:15px 15px;
+}
+.subheader-dreapta{
+  flex:30%;
+  color:white;
+  padding-top: 25px;
+}
+
+.factura-noua{
+  float: left;
+>>>>>>> 1f2a16e75f22412794abd4f243c67fdd15b41f3b
 }

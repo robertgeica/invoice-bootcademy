@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8" />
@@ -276,3 +277,138 @@
 <footer></footer>
 </body>
 </html>
+=======
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Invoice</title>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="header">
+        <div class="navigation-bar">
+          <div class="subheader-stanga">
+            <div>INVOICE</div>
+          </div>
+          <div class="subheader-dreapta">
+            <div class="factura-noua">Factura noua</div>
+            <div>Tiparire</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="factura-info">
+      <div class="furnizor">
+        <label for="furnizor">Furnizor:</label>
+        <textarea id="furnizor" class="textarea" name="furnizor" rows="10" cols="20"></textarea>
+      </div>
+
+      <div>
+        <h3>FACTURA</h3>
+
+        <label for="factura-nr">Nr</label>
+        <input type="text" id="factura-nr" name="factura-nr" />
+        <br />
+
+        <label for="factura-data">Data</label>
+        <input type="text" id="factura-data" name="factura-data" />
+        <br />
+
+        <label for="factura-aviz">Nr aviz</label>
+        <input type="text" id="factura-aviz" name="factura-aviz" />
+      </div>
+
+      <div class="cumparator">
+        <label for="cumparator">Cumparator</label>
+        <textarea id="cumparator" class="textarea" name="cumparator" rows="10" cols="20"></textarea>
+      </div>
+    </div>
+
+    <div class="factura-tabel">
+      <table style="width: 100%">
+        <tr>
+          <th>Nr. Crt</th>
+          <th>Denumirea produselor sau serviciilor</th>
+          <th>U.M.</th>
+          <th>Cantitatea</th>
+          <th>Pret unitar (fara TVA) lei</th>
+          <th>Valoarea lei</th>
+          <th>Valoarea TVA lei</th>
+        </tr>
+
+        <tr>
+          <td>0</td>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5(3x4)</td>
+          <td>6</td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td>
+            <label for="produse-denumire" class="sr-only">Denumire produse sau servicii</label>
+            <input class="input" type="text" id="produse-denumire" name="produse-denumire" />
+          </td>
+          <td>
+            <label for="um" class="sr-only">U.M.</label>
+            <input class="input" type="text" id="um" name="um" />
+          </td>
+          <td>
+            <label for="produse-cantitate" class="sr-only">Cantitatea</label>
+            <input class="input" type="text" id="produse-cantitate" name="produse-cantitate" />
+          </td>
+          <td>
+            <label for="produse-pret-unitar" class="sr-only">Pret unitar (fara TVA) lei</label>
+            <input class="input" type="text" id="produse-pret-unitar" name="produse-pret-unitar" />
+          </td>
+          <td></td>
+          <td><button>Adauga</button></td>
+        </tr>
+
+        <tr>
+          <td>.</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td rowspan="2">Semnatura furnizor</td>
+          <td colspan="3" rowspan="2"></td>
+          <td>Total</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Semnatura de primire</td>
+          <td colspan="2">Total de plata</td>
+        </tr>
+      </table>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer">
+      <div class="subfooter">Copyright(c) 2021 Universitatea Craiova</div>
+    </div>
+  </footer>
+</body>
+
+</html>
+>>>>>>> 1f2a16e75f22412794abd4f243c67fdd15b41f3b
