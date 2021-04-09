@@ -7,6 +7,12 @@ const calculateTotalPrice = () => {
   });
 
   document.getElementById("valoare-lei").innerHTML = totalPrice;
+
+  // reset values after pressing submit button
+  document.getElementById("produse-denumire").value = '';
+  document.getElementById("um").value = 0;
+  document.getElementById("produse-cantitate").value = 0;
+  document.getElementById("produse-pret-unitar").value = 0;
 };
 
 var nrCrt = 0;
