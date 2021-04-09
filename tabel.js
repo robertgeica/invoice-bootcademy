@@ -49,12 +49,12 @@ function addNewRow() {
   var pret_unitar = document.getElementById("produse-pret-unitar").value;
   cell5.innerHTML = pret_unitar;
   cell5.style.border = "thin solid black";
-  cell5.classList.add("pret");
   cell5.style.textAlign = "center";
   cell5.style.fontSize = "20px";
-
+  
   cell6.style.border = "thin solid black";
   cell6.style.textAlign = "center";
+  cell6.classList.add("pret");
   cell6.style.fontSize = "20px";
   cell6.innerHTML = cantitate*pret_unitar;
 
