@@ -1,0 +1,14 @@
+
+header, footer, input, button {
+    display: none;    
+}
+
+main {
+    width:100%!important;
+    padding:0 !important;
+    margin:0 !important;
+}
+
+@page {
+    margin: 2cm;
+}

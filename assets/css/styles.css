@@ -221,6 +221,29 @@ main {
   padding-bottom: 10px;
 }
 
+.subheader-dreapta button {
+  background: #173f5f;
+  color: white ;
+}
+
 .factura-noua {
   float: left;
 }
+
+/* Var 2 pentru printare
+@media print {
+  header, footer, input, button {
+    display: none;    
+  }
+
+  main {
+    width:100%!important;
+    padding:0 !important;
+    margin:0 !important;
+  }
+}
+
+@page {
+  margin: 2cm;
+} 
+*/
