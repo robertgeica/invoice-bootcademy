@@ -71,24 +71,20 @@ function addNewRow() {
   cell7.style.fontSize = "20px";
   cell7.innerHTML = valTVA.toFixed(2);
 
+  // am creat butonul de stergere din dreapta fiecarei noi intrari pe care o adaugam cu ajutorul butonului "adauga"
   var button_stergere = document.createElement("button");
   button_stergere.innerHTML = "X";
   cell8.appendChild(button_stergere);
-  cell8.style.border = "thin solid black";
+  cell8.style.border = "0px none white";
   button_stergere.style.backgroundColor = "#ff4d4d";
   button_stergere.style.color = "#ffffff";
   cell8.style.width = "10px";
+  button_stergere.id = "#buton-de-stergere";
 
-  document.addEventListener("DOMContentLoaded", function (event) {
-    button_stergere.onclick = function () {
-      removeRow(this);
-    }
-  });
+  //aici am facut ca, atunci cand apesi pe butonul "X" (cel creat deasupra), intrarea sa se stearga.
+  button_stergere.onclick = function(){
+      document.getElementsByTagName("tr")[this.parentNode.parentNode.rowIndex].remove();
+  };
 
   calculateTotalPrice();
-}
-
-function removeRow(x) {
-  var i = x.parentNode.parentNode.rowIndex;
-  document.getElementById("my-table").deleteRow(i);
 }
