@@ -27,6 +27,7 @@ function addNewRow() {
   var cell5 = row.insertCell(4);
   var cell6 = row.insertCell(5);
   var cell7 = row.insertCell(6);
+  var cell8 = row.insertCell(7);
 
   cell1.innerHTML = ++nrCrt;
   cell1.style.border = "thin solid black";
@@ -70,5 +71,24 @@ function addNewRow() {
   cell7.style.fontSize = "20px";
   cell7.innerHTML = valTVA.toFixed(2);
 
+  var button_stergere = document.createElement("button");
+  button_stergere.innerHTML = "X";
+  cell8.appendChild(button_stergere);
+  cell8.style.border = "thin solid black";
+  button_stergere.style.backgroundColor = "#ff4d4d";
+  button_stergere.style.color = "#ffffff";
+  cell8.style.width = "10px";
+
+  document.addEventListener("DOMContentLoaded", function (event) {
+    button_stergere.onclick = function () {
+      removeRow(this);
+    }
+  });
+
   calculateTotalPrice();
+}
+
+function removeRow(x) {
+  var i = x.parentNode.parentNode.rowIndex;
+  document.getElementById("my-table").deleteRow(i);
 }
