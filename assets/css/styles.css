@@ -230,9 +230,8 @@ main {
   float: left;
 }
 
-/* Var 2 pentru printare
 @media print {
-  header, footer, input, button {
+  header, footer, input, button, .adauga-elemente {
     display: none;    
   }
 
@@ -245,5 +244,4 @@ main {
 
 @page {
   margin: 2cm;
-} 
-*/
+}

@@ -117,7 +117,7 @@
               <td class="tabel-factura-text">6</td>
             </tr>
 
-            <tr>
+            <tr class="adauga-elemente">
               <td class="tabel-factura-text"></td>
               <td class="tabel-factura-text" colspan="2">
                 <label for="produse-denumire" class="sr-only"
@@ -128,11 +128,18 @@
                   type="text"
                   id="produse-denumire"
                   name="produse-denumire"
+                  onkeyup="validationDenumireProdus(this)"
                 />
               </td>
               <td class="tabel-factura-text">
                 <label for="um" class="sr-only">U.M.</label>
-                <input class="um-input" type="text" id="um" name="um" value="0"/>
+                <input
+                  class="um-input"
+                  type="text"
+                  id="um"
+                  name="um"
+                  value="0"
+                  onkeyup="validationUM(this)"/>
               </td>
               <td class="tabel-factura-text">
                 <label for="produse-cantitate" class="sr-only"
@@ -144,6 +151,7 @@
                   id="produse-cantitate"
                   name="produse-cantitate"
                   value="0"
+                  onkeyup="validationCantitate(this)"
                 />
               </td>
               <td class="tabel-factura-text">
@@ -156,6 +164,7 @@
                   id="produse-pret-unitar"
                   name="produse-pret-unitar"
                   value="0"
+                  onkeyup="validationPretUnitar(this)"
                 />
               </td>
               <td class="tabel-factura-text"></td>

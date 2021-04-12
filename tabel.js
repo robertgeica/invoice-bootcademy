@@ -58,7 +58,7 @@ function addNewRow() {
   cell5.style.border = "thin solid black";
   cell5.style.textAlign = "center";
   cell5.style.fontSize = "20px";
-  
+
   cell6.style.border = "thin solid black";
   cell6.style.textAlign = "center";
   cell6.classList.add("pret");
@@ -79,12 +79,37 @@ function addNewRow() {
   button_stergere.style.backgroundColor = "#ff4d4d";
   button_stergere.style.color = "#ffffff";
   cell8.style.width = "10px";
+  cell8.className = "adauga-elemente";
   button_stergere.id = "#buton-de-stergere";
 
-  //aici am facut ca, atunci cand apesi pe butonul "X" (cel creat deasupra), intrarea sa se stearga.
+  //aici am facut ca, atunci cand apesi pe butonul "X" (cel creat deasupra), intrarea (randul) sa se stearga.
   button_stergere.onclick = function(){
       document.getElementsByTagName("tr")[this.parentNode.parentNode.rowIndex].remove();
   };
 
   calculateTotalPrice();
+}
+
+//functie care valideaza denumirea produsului (sa fie formata doar din litere)
+function validationDenumireProdus(r) {
+  let denumire_produs = /[^a-zA-Z]/;
+  r.value = r.value.replace(denumire_produs, "");
+}
+
+//functie care valideaza um (doar cifre)
+function validationUM(r) {
+  let um = /[^1-9]/;
+  r.value = r.value.replace(um, "");
+}
+
+//functie care valideaza cantitatea (doar cifre)
+function validationCantitate(r) {
+  let cantitate = /[^1-9]/;
+  r.value = r.value.replace(cantitate, "");
+}
+
+//functie care valideaza pretul unitar (doar cifre)
+function validationPretUnitar(r) {
+  let pret_unitar = /[^1-9]/;
+  r.value = r.value.replace(pret_unitar, "");
 }
