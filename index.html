@@ -16,9 +16,12 @@
             <div class="subheader-stanga">
               <div>INVOICE</div>
             </div>
+
             <div class="subheader-dreapta">
-              <div class="factura-noua">Factura noua</div>
+              <a href="/index.html" target="_blank">Factura noua</a>
               <button onclick="window.print()">Tiparire</button>
+              <button onclick="saveToLocalStorage()">Save</button>
+              <button onclick="loadLocalStorage()">Load</button>
             </div>
           </div>
         </div>
@@ -84,7 +87,7 @@
         </div>
 
         <div class="factura-tabel">
-          <table class="tabel-factura" id="#mytable">
+          <table class="tabel-factura" id="#invoice-table">
             <tr>
               <th class="factura-tabel-th nr-crt">Nr.<br />Crt</th>
               <th class="factura-tabel-th denumirea-produselor" colspan="2">
